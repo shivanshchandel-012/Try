@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xmotors</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- navbar --> 
+    <header>
+        <!--nav-container-->
+        <div class="nav container">
+            <a href="#" class="logo">X<span>motors</span></a>
+            <!--navbar-->
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                    <a href="#" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" style="background: red; color: white; border-radius: 50%; padding: 2px 5px; font-size: 12px;">0</span>
+                    </a>
+                </li>                
+            </ul>
+            <div class="log-reg" >
+                <a href="register.html">Register</a>
+                <br>
+                <a href="login.html">Login</a>
+            </div> 
+        </div> 
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We Have Everything<br>your <span>Car</span> Need</h1><br>
+            <i><p>Your trusted destination for new and pre-owned vehicles.<br>Explore our diverse inventory, enjoy exceptional service,<br>and let our expert team help you find the perfect car to fit your lifestyle.</p></i><br><br>
+            <a href="#" class="btn" style="margin-left:150px;">Discover Now</a>
+        </div>
+    </section><br><br>   
+    <!--cars-section-->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>All Cars</span><br><br><br>
+            <h1>We have all types of cars</h1>
+        </div>
+        <div class="cars-container">
+            <!--box1-->
+            <div style="margin-left:24px;" class="box">
+                <img src="img/car1.jpg" alt="">
+                <center><h2><a href="porshetaycan.html" style="color: black;" >PORCHE TAYCAN</a></h2></center>
+            </div>
+            <!--box2-->
+            <div class="box">
+                <img src="img/car2.jpg" alt="">
+                <center><h2><a href="audi4.html" style="color: black;" >AUDI A4</a></h2></center>
+            </div>
+            <!--box3-->
+            <div class="box">
+                <img src="img/car3.jpg" alt="">
+                <center><h2><a href="buggattibolide.html" style="color: black;" >BUGATTI BOLIDE</a></h2></center>
+            </div>
+            <!--box4-->
+            <div style="margin-left:24px;" class="box">
+                <img src="img/car4.jpg" alt="">
+                <center><h2><a href="aventador.html" style="color: black;" >AVENTADOR</a></h2></center>
+            </div>
+            <!--box5-->
+            <div class="box">
+                <img src="img/car5.jpg" alt="">
+                <center><h2><a href="bmwxm.html" style="color: black;" >BMW XM</a></h2></center>
+            </div>
+            <!--box6-->
+            <div class="box">
+                <img src="img/car6.jpg" alt="">
+                <center><h2><a href="dodgedemon.html" style="color: black;" >DODGE DEMON</a></h2></center>
+            </div>
+        </div>
+    </section>
+    <!--About-section-->
+    <section class="about" id="about">
+        <div class="about-img">
+        <img src="img/about.png" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span><br><br>
+            <h2>Cheap prices with<br>Quality Cars</h2><br>
+            <p>At <b>Xmotors</b>, we connect you with your ideal vehicle through exceptional service and a diverse inventory of new and pre-owned cars. Our dedicated team ensures a seamless buying experience, while our expert technicians provide top-notch maintenance and support.</p><br>
+        </div>
+    </section>
+    <!--parts-section-->
+<section class="parts" id="parts">
+    <div class="heading">
+        <span>What We Offer</span><br><br>
+        <h1>Our Car Is Always Excellent,<br>our Car Parts are also Top-notch!</h1>
+    </div>
+    <div class="parts-container">
+        <!--box1-->
+        <div class="box">
+            <center><img style="margin-top:16%" src="img/part1.png" alt="Engine"></center>
+            <h3>Engine</h3>
+            <span>$39,000</span><br>
+            <i class="fa-solid fa-star">(5 reviews)</i><br><br>
+            <a href="#" id="add-to-cart-engine" class="btn add-to-cart" data-id="1" data-name="Engine" data-price="39000" data-reviews="5">Add to Cart</a><br><br>
+        </div>
+        <!--box2-->
+        <div class="box">
+            <center><img src="img/part2.png" alt="Gear Box"></center>
+            <h3>Gear Box</h3>
+            <span>$399.99</span><br>
+            <i class="fa-solid fa-star">(5 reviews)</i><br><br>
+            <a href="#" id="add-to-cart-gearbox" class="btn add-to-cart" data-id="2" data-name="Gear Box" data-price="399.99" data-reviews="5">Add to Cart</a><br><br>
+        </div>
+        <!--box3-->
+        <div class="box">
+            <center><img src="img/part3.png" alt="Auto Spare Parts"></center>
+            <h3>Auto Spare Parts</h3>
+            <span>$99.99-$299.99</span><br>
+            <i class="fa-solid fa-star">(5 reviews)</i><br><br>
+            <a href="#" id="add-to-cart-spare-parts" class="btn add-to-cart" data-id="3" data-name="Auto Spare Parts" data-price="99.99-299.99" data-reviews="5">Add to Cart</a><br><br>
+        </div>
+        <!--box4-->
+        <div class="box">
+            <center><img src="img/part4.png" alt="Air Filter"></center>
+            <h3>Air Filter</h3>
+            <span>$299.99</span><br>
+            <i class="fa-solid fa-star">(5 reviews)</i><br><br>
+            <a href="#" id="add-to-cart-air-filter" class="btn add-to-cart" data-id="4" data-name="Air Filter" data-price="299.99" data-reviews="5">Add to Cart</a><br><br>
+        </div>
+        <!--box5-->
+        <div class="box">
+            <center><img style="margin-top:7%" src="img/part5.png" alt="Car Alternator"></center>
+            <h3>Car Alternator</h3>
+            <span>$999.99</span><br>
+            <i class="fa-solid fa-star">(5 reviews)</i><br><br>
+            <a href="#" id="add-to-cart-alternator" class="btn add-to-cart" data-id="5" data-name="Car Alternator" data-price="999.99" data-reviews="5">Add to Cart</a><br><br>
+        </div>
+        <!--box6-->
+        <div class="box">
+            <center><img src="img/part6.png" alt="MRF Tyre"></center>
+            <h3>MRF Tyre</h3>
+            <span>$399.99</span><br>
+            <i class="fa-solid fa-star">(5 reviews)</i><br><br>
+            <a href="#" id="add-to-cart-tyre" class="btn add-to-cart" data-id="6" data-name="MRF Tyre" data-price="399.99" data-reviews="5">Add to Cart</a><br><br>
+        </div>
+
+    </div>
+</section>
+<br><br>
+<section class="testimonials" id="testimonials">
+    <div class="heading">
+        <h1>What Our Customers Say</h1>
+    </div>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"Amazing service! Found the perfect car for my family at an affordable price."</p>
+            <span>- Sarah Johnson</span>
+        </div>
+        <div class="testimonial">
+            <p>"Xmotors offers an excellent selection of vehicles and a seamless buying process."</p>
+            <span>- John Smith</span>
+        </div>
+        <div class="testimonial">
+            <p>"Loved their customer service. Will definitely recommend Xmotors to my friends."</p>
+            <span>- Emma Brown</span>
+        </div>
+    </div>
+</section>
+<br>
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <a href="#" class="logo"><span style="color:#fd052f;">X</span><span>motors</span></a>
+            <div class="social">
+                <a href="https://www.facebook.com/xmotorsNZ/" class="fa-brands fa-facebook-f"></a>
+                <a href="https://www.instagram.com/xmotors.me/" class="fa-brands fa-instagram"></a>
+                <a href="" class="fa-brands fa-x-twitter"></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Page</h3>
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#parts">Parts</a>
+            <a href="#sales">Sales</a>
+        </div>
+        <div class="footer-box">
+            <h3>Legal</h3>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Refund policy</a>
+        </div>
+        <div class="footer-box">
+            <h3>Contacts</h3>
+            <p>Shivansh Chandel: +91 7340900212</p>
+            <p>Sambhav Sehgal: +91 7988280245</p>
+            <p>Shivansh Pathania: +91 6230650034</p>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 X Motors. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="main.js">
+    
+</script>
+</body>
+</html>
